@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- 
+    FILE: Blog Listing Page
+    URL: yoursite.com/blog/
+    PURPOSE: Shows list of all blog posts
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Lines and Layers</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <a href="../">
+                    <img src="../logo.png" alt="Lines and Layers">
+                </a>
+            </div>
+            <div class="brand-name">Lines and Layers</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../projects/">Projects</a></li>
+            <li><a href="../blog/" class="active">Blog</a></li>
+            <li><a href="../contact/">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="page-content">
+        <div class="blog-container">
+            <div class="section-header">
+                <h1>Writing</h1>
+                <p>Thoughts on engineering, design, and technology</p>
+            </div>
+            <div class="blog-grid">
+                <a href="test-1/" class="blog-post">
+                    <div class="blog-date">2025.02.16</div>
+                    <h3>Test 1</h3>
+                    <p>Brief excerpt here...</p>
+                </a>
+                <a href="constraint-design/" class="blog-post">
+                    <div class="blog-date">2025.02.10</div>
+                    <h3>The Art of Constraint-Driven Design</h3>
+                    <p>Why limitations often lead to the most creative engineering solutions.</p>
+                </a>
+                <!-- Add more blog posts here -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
