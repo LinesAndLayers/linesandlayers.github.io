@@ -879,7 +879,7 @@ nav {
 /* Limit image height on desktop to fraction of screen height */
 @media (min-width: 769px) {
     .project-content img, .blog-detail-content img {
-        max-height: 60vh; /* 60% of viewport height - adjust to your preference */
+        max-height: 50vh; /* 60% of viewport height - adjust to your preference */
         width: auto; /* Maintains aspect ratio */
     }
 }
