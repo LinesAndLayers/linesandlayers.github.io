@@ -53,40 +53,40 @@
 <h2>Wall Thickness</h2>
 <p>Every part of a 3D print is simply melted plastic pushed out of a nozzle. This limits the size of all our parts to be <em>at least</em> as large as the nozzle is wide. When choosing wall thicknesses for your part, anything smaller than that stream of plastic will just be ignored by the slicer.</p>
 <p>Additionally, prints will get most of their strength from their walls. While having only one wall will print, it will be very fragile. Keeping your walls to at least 2 nozzle thicknesses wide will keep your parts much more reliable and sturdy.</p>
-<img src="Comparison of Wall Thicknesses" alt="Wall_Thickness">
+<img src="images/Wall_Thickness" alt="Comparison of Wall Thicknesses">
 
 <h2>Curved Features</h2>
 
 <p>Recall how a parts are printed layer by layer. 3D printers have much more precision when moving within a plane of the same height than from layer to layer. This is most noticeable on curved surfaces, such as circles.</p>
 <p>A circle that is printed flat against the build plate will be, for all intents and purposes, a circle. A circle that is printed vertically, however, will be made of many "steps" that add ridges to your part. In most cases, this won't matter too much, but for parts that require a very close fit, a vertical circle should try to be avoided.</p>
-<img src="Circle printed flat (left" alt="images/Curved_Features.png"> vs Circle printed vertically (right))
+<img src="images/Curved_Features.png" alt="Circle printed flat (left) vs Circle printed vertically (right)">
 <h2>Overhangs</h2>
 <p>Consider how these layers would stack if you were to have an overhang on your part. If this overhang goes up at a slope, each layer will slightly hang off the one below it. For angles that are about 45 degrees from vertical, this little bit of hanging is negligible.</p>
 <p>As you increase this angle, the stacked layers will be further and further offset from the layer below them, increasing the amount the plastic droops. You can push it to around a 60 degree angle and still have a functional part, although it may look a little messy.</p>
 <p>I don't recommend going past 60 degrees. Past this point it is likely that both the shape and function of your parts will be greatly impacted by the drooping plastic.</p>
-<img src="Safe overhang angle (left" alt="images/Overhangs.png"> vs Too steep overhang (right))
+<img src="images/Overhangs.png" alt="Safe overhang angle (left) vs Too steep overhang (right)">
 
 <h2>Supports</h2>
 <p>Keeping angles shallow is a pretty strict design requirement. This is where supports come in. If our part has overhangs that cannot be printed, we can enable supports in the slicer to hold up the model as it prints. These are a sacrificial structure that can be relatively easily torn off the part once it's finished.</p>
 <p>It should be noted that support material often leaves a rough surface finish once removed, but the severity of this can be lessened by adjusting print settings or doing some post-processing work.</p>
-<img src="Overhangs with and without support" alt="images/Supports.png">
+<img src="images/Supports.png" alt="Overhangs with and without support">
 
 <h2>Bridging</h2>
 <p>There is a design trick to push printing without supports a little bit further through a technique called bridging.</p>
 <p>If you have an air gap between two printed areas, and the printer's path goes from one side to the other in a straight line, additional support material can often be avoided.</p>
 <p>Designing with bridges can save a lot of support material and post-processing time. It should be noted, however, that the longer the gap, the more prominent the drooping on the underside of the bridge will be. If this geometry is important, it may be good to still support long bridged sections. Adjusting print settings, such as temperature, will also affect how cleanly the bridges print.</p>
-<img src="Comparison of different unsupported geometries" alt="images/Bridging.png">
+<img src="images/Bridging.png" alt="Comparison of different unsupported geometries">
 <h2>Clearance</h2>
 <p>When we design parts in CAD, we can make our parts exactly the size we want them. If we measure the same part once it's been printed,  we will find that all our dimensions are slightly different than we have them in our file. This difference in sizing is called <em>tolerance</em>.</p>
 <p>For many things, this slight variation will never be noticed. But when parts need to fit together, this difference may be the reason a design doesn't work. To rectify this, we design our parts with <em>clearance</em>. This means that we design things to have a slight gap between them, ensuring they will fit together without issue.</p>
 <p>A good starting point for clearances is a gap of 0.3 mm. This can be slightly increased or decreased depending on your needs.</p>
-<img src="Peg (left" alt="images/Clearances.png"> and Hole (right) designed with clearance)
+<img src="images/Clearances.png" alt="Peg (left) and Hole (right) designed with clearance">
 
 <h2>Print Orientation</h2>
 <p>Many of these design guidelines are dependent on how the part sits on the build plate. Because of this, it is important to consider how you plan to orient the parts while you're still in the design phase. Just because a part is upright in your CAD file does not mean it needs to print in that orientation.</p>
 <p>Print orientation also affects the strength of your parts. The bond between layers is much weaker than the plastic itself, so it is best to avoid thin vertical features.</p>
 <p>Don't hesitate to play with the arrangement of parts in your slicer. You may find that a seemingly complex part can be turned to print much cleaner or stronger by just rotating it a little bit.</p>
-<img src="The letter E printed in different ways, affecting support required and part strength" alt="images/Print_Orientation.png">
+<img src="images/Print_Orientation.png" alt="The letter E printed in different ways, affecting support required and part strength">
 
 <h2>Wrap Up</h2>
 <p>The manufacturing process is just as important a consideration as any other. Designing with the 3D printing process in mind gives you a better way to approach the problems you may run into. Try slowing down and thinking about the process your part has to go through, and your part will begin to design itself.</p>
