@@ -714,14 +714,24 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-/* Images in content - centered automatically */
-.project-content img, .blog-detail-content img {
+/* Images in project content - centered automatically */
+.project-content img {
     max-width: 100%;
     height: auto;
     margin: 2rem auto; /* Centers the image */
     display: block;
     border-radius: 4px;
     border: 1px solid var(--border);
+}
+
+/* Images in blog content - centered automatically */
+.blog-detail-content img {
+    max-width: 50%;
+    height: auto;
+    margin: 2rem auto; /* Centers the image */
+    display: block;
+    border-radius: 4px;
+    /* border: 1px solid var(--border); */
 }
 
 /* Image with caption wrapper */
