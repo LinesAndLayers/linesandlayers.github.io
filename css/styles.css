@@ -726,7 +726,7 @@ nav {
 
 /* Images in blog content - centered automatically */
 .blog-detail-content img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
     margin: 2rem auto; /* Centers the image */
     display: block;
@@ -874,6 +874,14 @@ nav {
     .hero-content { grid-template-columns: 1fr; } /* Single column hero */
     .projects-grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); } /* Narrower cards */
     .nav-left { gap: 1.5rem; } /* Less space between logo and brand name */
+}
+
+/* Limit image height on desktop to fraction of screen height */
+@media (min-width: 769px) {
+    .project-content img, .blog-detail-content img {
+        max-height: 60vh; /* 60% of viewport height - adjust to your preference */
+        width: auto; /* Maintains aspect ratio */
+    }
 }
 
 /* ================================
